@@ -8,24 +8,28 @@ import { PagesComponent } from './pages.component';
 
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { ComponentModule } from '../component/component.module';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
   ],
   imports: [
     CommonModule,
+    FormsModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    ComponentModule,
   ],
   exports: [
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
-  ]
+    PagesComponent,
+  ],
 })
-export class PagesModule { }
+export class PagesModule {}
